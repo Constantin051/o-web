@@ -1,0 +1,24 @@
+<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="19" height="18" fill="#F5F5F5"/>
+<g id="Desktop" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="10891" transform="translate(-1174 -26)" fill="white"/>
+<g id="Frame">
+<path id="Rectangle" d="M-1174 -26H266V43H-1174V-26Z" fill="#F2F2F2"/>
+<g id="Frame_2">
+<g id="Frame_3">
+<g id="IMAGE" clip-path="url(#clip1_0_1)">
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M18.5147 9.50731C18.5147 4.7675 14.5237 0.924316 9.60158 0.924316C4.67948 0.924316 0.688477 4.7675 0.688477 9.50731C0.688477 13.7911 3.94733 17.342 8.20891 17.9865V11.9891H5.94522V9.50731H8.20891V7.61637C8.20891 5.46564 9.53991 4.27666 11.5756 4.27666C12.5509 4.27666 13.5711 4.44449 13.5711 4.44449V6.5569H12.4466C11.34 6.5569 10.9939 7.21825 10.9939 7.898V9.50731H13.4657L13.0709 11.9891H10.9943V17.9872C15.2558 17.3431 18.5147 13.7923 18.5147 9.50731Z" fill="#1C2752"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="10891" fill="white" transform="translate(-1174 -26)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="19" height="18" fill="white"/>
+</clipPath>
+</defs>
+</svg>
