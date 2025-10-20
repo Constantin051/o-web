@@ -25,7 +25,13 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	overflow-x: hidden;
 }
+
+html {
+	overflow-x: hidden;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -46,14 +52,21 @@ table {
 /*BANNER*/
 
 .banner {
-    width: 1440px;
+    width: 100%;
     height: 69px;
     background: #F2F2F2;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 120px;
+    box-sizing: border-box;
+}
+
+.banner-content {
+    width: 1200px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 120px; 
-    box-sizing: border-box; 
 }
 
 
@@ -77,10 +90,19 @@ table {
 }
 
 .info_bar {
+    width: 100%;
+    display: flex;
+    height: 128px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 120px;
+    box-sizing: border-box;
+}
+
+.info_bar-content {
     width: 1200px;
     display: flex;
     height: 128px;
-    padding-left: 120px;
     justify-content: space-between;
     align-items: center;
 }
@@ -190,7 +212,7 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 120px; 
+    margin-left: 120px;
     z-index: 2;
 }
 
@@ -274,7 +296,7 @@ table {
 /*PAGE1*/
 
 .page1 {
-    width: 1440px;
+    width: 100%;
     height: 813px;
     flex-shrink: 0;
     position: relative;
@@ -542,7 +564,7 @@ table {
 /*PAGE3*/
 
 .page3 {
-    width: 1440px;
+    width: 100%;
     height: 900px;
     background-color: #FFB342;
 }
@@ -823,7 +845,7 @@ table {
 /*PAGE4*/
 
 .page4 {
-    width: 1440px;
+    width: 100%;
     height: 1397px;
     flex-shrink: 0;
     background: #F4F4F4;
@@ -842,6 +864,7 @@ table {
 }
 
 .cards {
+    width: 1200px;
     display: flex;
     justify-content: space-between;
     padding: 50px 120px;
@@ -1053,6 +1076,7 @@ table {
 }
 
 .cards2 {
+    width: 1200px;
     display: flex;
     justify-content: space-between;
     padding: 50px 120px;
@@ -1215,7 +1239,7 @@ table {
 /*PAGE6*/
 
   .page6 {
-    width: 1440px;
+    width: 100%;
     height: 981px;
     flex-shrink: 0;
     background: #1C2752;
@@ -1273,11 +1297,11 @@ table {
 
 .gallery-images {
     display: flex;
-    width: auto;
+    width: 1200px;
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
-    margin: 49px 35px 0 58px;
+    margin: 49px 0px 0 133px;
 
 }
 
@@ -1437,7 +1461,7 @@ table {
 /*PAGE7*/
 
 .page7 {
-    width: 1440px;
+    width: 100%;
     height: 1079px;
     background: #FFF;
 }
@@ -1835,7 +1859,7 @@ table {
 /*PAGE8*/
 
 .page8 {
-    width: 1440px;
+    width: 100%;
     height: 1352px;
     flex-shrink: 0;
     background: #F4F4F4;
@@ -2740,7 +2764,7 @@ table {
 /*PAGE9*/
 
 .page9 {
-    width: 1440px;
+    width: 100%;
     height: 328px;
     flex-shrink: 0;
     background: #FFB342;
@@ -2831,7 +2855,7 @@ table {
 /*FOOTER*/
 
 .footer {
-    width: 1440px;
+    width: 100%;
     height: 560px;
     flex-shrink: 0;
     background: #1C2752;
@@ -2839,7 +2863,7 @@ table {
 
 .info-footer {
     display: flex;
-    width: 1200px;
+    width: 100%;
     height: 117px;
     padding-top: 50px;
     padding-left: 120px;
@@ -3247,3 +3271,403 @@ table {
     padding-top: 10px;
 }
 
+/* Планшеты (≤768px) */
+@media (max-width: 768px) {
+    /* Banner (без изменений) */
+    .banner {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        position: relative;
+        z-index: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-content {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+    .time {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        margin: 0;
+        max-width: 100%;
+        word-break: break-word;
+    }
+    .media_icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .media_icons img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Info Bar (без изменений) */
+    .info_bar {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        position: relative;
+        z-index: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_bar-content {
+        width: 100%;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+    .logo img {
+        width: 100px;
+        height: auto;
+        display: block;
+    }
+    .contacts {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .mail_info, .number_info {
+        width: auto;
+        max-width: 45%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: nowrap;
+        visibility: visible;
+        opacity: 1;
+    }
+    .container, .container2 {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        display: block;
+    }
+    .mail-us, .call-us {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0;
+        text-align: center;
+    }
+    .info-bluecollar, .number {
+        font-size: 10px;
+        line-height: 16px;
+        margin: 0;
+        text-align: center;
+        max-width: 100%;
+        word-break: break-word;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* Header (без изменений) */
+    .header {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header_nav {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .header_nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin: 0;
+        padding: 10px 0;
+        list-style: none;
+    }
+    .header_nav li {
+        width: 100%;
+        text-align: center;
+    }
+    .header_nav a {
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+        display: block;
+        padding: 8px;
+        transition: opacity 0.3s ease;
+    }
+    .header_nav a:hover {
+        opacity: 0.8;
+    }
+    .about-us-header, .pages-header, .blog-header, .contact-us-header {
+        padding: 0;
+        margin: 0;
+    }
+    .any_questions {
+        width: 100%;
+        max-width: 300px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        text-align: center;
+        margin: 10px 0;
+        display: block;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: opacity 0.3s ease;
+    }
+    .any_questions:hover {
+        opacity: 0.8;
+    }
+
+    /* Page 1 */
+    .page1 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 40px 15px;
+        position: relative;
+        z-index: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .info_page1 {
+        width: 100%;
+        max-width: 400px;
+        padding: 0 0 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .slogan {
+        width: 100%;
+        max-width: 350px;
+        display: flex !important;
+        flex-direction: column; /* Вернем колонку, затем скорректируем */
+        align-items: flex-start;
+        gap: 20px; /* Увеличено для разделения */
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 8px;
+        position: relative;
+        box-sizing: border-box;
+        overflow: visible;
+    }
+    .slogan-top {
+        display: flex;
+        flex-direction: row; /* Шестеренку и .improve_our в строку */
+        align-items: center;
+        gap: 10px; /* Промежуток между шестеренкой и текстом */
+        width: 100%;
+    }
+    .slogan img {
+        width: 50px;
+        height: auto;
+        margin: 0;
+        display: block;
+        max-width: 100%;
+    }
+    .improve_our {
+        width: auto; /* Уберём фиксированную ширину */
+        max-width: 80%; /* Ограничим, чтобы не лез на .a_recognized */
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        overflow-wrap: break-word;
+        position: static;
+        z-index: 10;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #000;
+    }
+    .a_recognized {
+        width: 90%;
+        max-width: 90%;
+        font-size: 28px;
+        line-height: 40px;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        overflow-wrap: break-word;
+        position: static;
+        z-index: 0;
+        margin-top: 20px; /* Отступ от .improve_our */
+    }
+    .view_services {
+        width: auto;
+        max-width: 300px;
+        height: 40px;
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 5px;
+        position: static;
+        z-index: 0;
+    }
+    .view_services p {
+        font-size: 14px;
+        line-height: 40px;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+}
+
+/* Мобильные устройства (≤480px) */
+@media (max-width: 480px) {
+    /* Banner (без изменений) */
+    .banner {
+        padding: 10px;
+    }
+    .banner-content {
+        max-width: 100%;
+    }
+    .time {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .media_icons img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Info Bar (без изменений) */
+    .info_bar {
+        padding: 10px;
+    }
+    .info_bar-content {
+        max-width: 100%;
+        gap: 8px;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .contacts {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .mail_info, .number_info {
+        max-width: 100%;
+        gap: 6px;
+    }
+    .container, .container2 {
+        width: 24px;
+        height: 24px;
+    }
+    .mail-us, .call-us {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .info-bluecollar, .number {
+        font-size: 9px;
+        line-height: 14px;
+    }
+
+    /* Header (без изменений) */
+    .header {
+        padding: 10px;
+    }
+    .header_nav ul {
+        gap: 10px;
+    }
+    .header_nav a {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 6px;
+    }
+    .any_questions {
+        max-width: 250px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 12px;
+    }
+
+    /* Page 1 */
+    .page1 {
+        padding: 15px 10px;
+    }
+    .info_page1 {
+        max-width: 300px;
+        padding: 0 0 0 15px;
+    }
+    .slogan {
+        max-width: 250px;
+        gap: 15px;
+        padding: 10px;
+    }
+    .slogan-top {
+        gap: 8px; /* Уменьшен промежуток для мобильных */
+    }
+    .slogan img {
+        width: 40px;
+        height: auto;
+        max-width: 100%;
+    }
+    .improve_our {
+        font-size: 12px;
+        line-height: 22px;
+        max-width: 75%; /* Уменьшено для мобильных */
+        text-align: left;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #000;
+        z-index: 10;
+    }
+    .a_recognized {
+        font-size: 22px;
+        line-height: 32px;
+        max-width: 85%;
+        text-align: left;
+        margin-top: 15px; /* Уменьшен для мобильных */
+    }
+    .view_services {
+        max-width: 200px;
+        height: 36px;
+        margin: 10px 0 0 0;
+    }
+    .view_services p {
+        font-size: 12px;
+        line-height: 36px;
+        text-align: left;
+    }
+}
