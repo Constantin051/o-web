@@ -1,0 +1,3050 @@
+/* Reset and global adjustments for responsiveness */
+@media (max-width: 768px) {
+    /* General styles */
+    * {
+        box-sizing: border-box;
+    }
+    body, html {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    section, footer, header {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    /* Header */
+    .header {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        position: relative;
+        z-index: 5;
+    }
+    .header_nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+    }
+    .header_nav a {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .about-us-header, .pages-header, .blog-header, .contact-us-header {
+        padding-left: 0;
+        text-align: center;
+    }
+    .any_questions {
+        width: 100%;
+        max-width: 90%;
+        height: 3rem;
+        margin: 12px auto;
+    }
+    .text_nav p a {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    /* Banner */
+    .banner {
+        padding-left: 15px;
+        height: auto;
+    }
+    .banner-content {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+    .time {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        text-align: center;
+    }
+    .media_icons {
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Info Bar */
+    .info_bar {
+        padding: 30px 15px 15px; /* Increased top padding to lift */
+        height: auto;
+        position: relative;
+        z-index: 10; /* Above navigation */
+    }
+    .info_bar-content {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .contacts {
+        gap: 8px; /* Reduced gap */
+        padding: 10px 0;
+        align-items: center;
+    }
+    .mail_info, .number_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: -8px; /* Lifted further */
+        width: 100%;
+        max-width: 90%;
+    }
+    .mail-us, .call-us {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+    .info-bluecollar, .number {
+        font-size: 0.85rem;
+        line-height: 1.2rem;
+        text-align: center;
+    }
+    .container, .container2 {
+        width: 1.75rem; /* ~28px */
+        height: 1.75rem;
+        flex-shrink: 0;
+    }
+
+    /* Page 1 */
+    .page1 {
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 20px 15px;
+    }
+    .info_page1 {
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+        padding: 20px 15px;
+        text-align: center;
+    }
+    .slogan {
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 12px;
+        background: none;
+    }
+    .slogan img {
+        display: none;
+        margin: 0 auto;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .improve_our {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        padding: 0;
+    }
+    .a_recognized {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        margin: 15px 0;
+    }
+    .view_services {
+        width: auto;
+        max-width: 90%;
+        height: 3rem;
+        margin: 15px auto;
+    }
+    .view_services p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0.8rem 0;
+        text-align: center;
+    }
+
+    /* Page 2 */
+    .page2 {
+        flex-direction: column;
+        padding: 20px 15px;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+    .page2photo {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .block-welcome-bluecollar {
+        width: 100%;
+        max-width: 95%;
+        padding: 0;
+        text-align: center;
+        margin: 15px auto;
+    }
+    .welcome-BlueCollar {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    .text-with-gear1 {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+    .We-Provide-Your-Future {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        margin: 10px 0;
+    }
+    .blueCollar, .we-have {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .experience {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .years-of-experience, .comprehensive-services {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .year {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        padding: 15px;
+        text-align: center;
+    }
+    .years-experience {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0 15px 20px;
+        text-align: center;
+    }
+    .for-all, .all-work, .experienced, .a-full, .properties {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        width: 100%;
+        max-width: 90%;
+        margin: 8px auto;
+        text-align: center;
+    }
+
+/* Page 3 - Fixed mobile buttons */
+.page3 {
+    width: 100%;
+    height: auto;
+    background-color: #FFB342;
+    padding: 60px 15px;
+    box-sizing: border-box;
+}
+
+.what-we-offer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.gear3 {
+    width: 207px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4F4;
+    margin: 0 auto;
+}
+
+.gear3-icon {
+    margin-right: 10px;
+}
+
+.text-what-we-offer {
+    width: 134px;
+    color: #1C2752;
+    font-size: 18px;
+    text-align: center;
+}
+
+.profession-main {
+    color: #1C2752;
+    font-family: Mulish, sans-serif;
+    font-size: 32px;
+    line-height: 1.3;
+    margin: 22px auto 0;
+    text-align: center;
+    max-width: 400px;
+}
+
+.we-have-extensive {
+    width: 100%;
+    color: #1C2752;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 12px auto 0;
+    text-align: center;
+    max-width: 500px;
+}
+
+.real-estate {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px auto 0;
+    padding: 0;
+    flex-wrap: row;
+}
+
+/* Кнопки - адаптивные для телефонов */
+.commercial,
+.residential,
+.industrial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+    min-width: 120px;
+    max-width: 200px;
+    height: 50px;
+}
+
+.commercial {
+    background-color: #FFFFFF;
+}
+
+
+.commercial img,
+.residential img,
+.industrial img {
+    display: none;
+    width: 24px;
+    height: 24px;
+}
+
+.text-commercial,
+.text-residential,
+.text-industrial {
+    color: #222;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.page3-rectangle {
+    width: 100%;
+    height: auto;
+    background: #FFF;
+    box-shadow: -1px 6px 18px 0 rgba(0, 0, 0, 0.09);
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+.electrical-installation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px;
+    text-align: center;
+}
+
+.text-electrical-installation {
+    width: auto;
+    height: 28px;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.text-electrical-installation p {
+    color: #1C2752;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.commercial-page3 {
+    width: 100%;
+    color: #1C2752;
+    font-family: Mulish;
+    font-size: 28px;
+    line-height: 1.3;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+.electrical,
+.in-addition {
+    width: 100%;
+    color: #7E7E7E;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 12px 0 0;
+    text-align: center;
+}
+
+.read-more {
+    width: 160px;
+    height: 50px;
+    background-color: #FFB342;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0;
+}
+
+.read-more p {
+    color: #1C2752;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.page3-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 40px;
+    display: block;
+}
+
+/* Tablet (768px - 1024px) - сохраняем текущую хорошую верстку */
+@media (min-width: 768px) {
+    .page3 {
+        padding: 80px 30px;
+    }
+    
+    .profession-main {
+        font-size: 38px;
+        max-width: 600px;
+    }
+    
+    .we-have-extensive {
+        font-size: 17px;
+        max-width: 700px;
+    }
+    
+    .real-estate {
+        gap: 15px;
+        margin: 40px auto 0;
+    }
+    
+    .commercial,
+    .residential,
+    .industrial {
+        height: 60px;
+        min-width: 180px;
+    }
+    
+    .text-commercial,
+    .text-residential,
+    .text-industrial {
+        font-size: 18px;
+    }
+    
+    .page3-rectangle {
+        flex-direction: row;
+        max-width: 900px;
+        margin: 40px auto 0;
+    }
+    
+    .electrical-installation {
+        align-items: flex-start;
+        text-align: left;
+        margin: 60px 40px;
+        width: 50%;
+    }
+    
+    .commercial-page3 {
+        text-align: left;
+        font-size: 32px;
+    }
+    
+    .electrical,
+    .in-addition {
+        text-align: left;
+    }
+    
+    .read-more {
+        margin: 20px 0 0;
+    }
+    
+    .page3-image {
+        width: 40%;
+        max-width: none;
+        margin: 60px 40px 60px 0;
+    }
+}
+
+/* Desktop (1025px+) - оригинальная верстка */
+@media (min-width: 1025px) {
+    .page3 {
+        padding: 140px 120px 0;
+        height: 900px;
+    }
+    
+    .what-we-offer {
+        width: 840px;
+        padding: 0;
+    }
+    
+    .profession-main {
+        font-size: 45px;
+        max-width: none;
+    }
+    
+    .we-have-extensive {
+        font-size: 18px;
+        max-width: 832px;
+    }
+    
+    .real-estate {
+        width: 1200px;
+        gap: 20px;
+        margin: 37px auto 0;
+    }
+    
+    .commercial,
+    .residential,
+    .industrial {
+        height: 68px;
+        min-width: 220px;
+        max-width: 250px;
+    }
+    
+    .text-commercial,
+    .text-residential,
+    .text-industrial {
+        font-size: 20px;
+    }
+    
+    .page3-rectangle {
+        width: 1160px;
+        height: 528px;
+        margin: 45px auto 0;
+    }
+}
+
+/* Mobile improvements (max-width: 767px) */
+@media (max-width: 767px) {
+    .real-estate {
+        gap: 8px;
+        margin: 25px auto 0;
+    }
+    
+    .commercial,
+    .residential,
+    .industrial {
+        height: 45px;
+        min-width: 110px;
+        max-width: 130px;
+        gap: 8px;
+        padding: 0 10px;
+    }
+    
+    .commercial img,
+    .residential img,
+    .industrial img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .text-commercial,
+    .text-residential,
+    .text-industrial {
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+/* Small mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .page3 {
+        padding: 50px 10px;
+    }
+    
+    .profession-main {
+        font-size: 26px;
+        margin: 15px auto 0;
+    }
+    
+    .we-have-extensive {
+        font-size: 14px;
+        margin: 10px auto 0;
+    }
+    
+    .real-estate {
+        gap: 6px;
+        margin: 20px auto 0;
+    }
+    
+    .commercial,
+    .residential,
+    .industrial {
+        height: 40px;
+        min-width: 100px;
+        max-width: 115px;
+        gap: 6px;
+        padding: 0 8px;
+    }
+    
+    .commercial img,
+    .residential img,
+    .industrial img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .text-commercial,
+    .text-residential,
+    .text-industrial {
+        font-size: 11px;
+    }
+    
+    .commercial-page3 {
+        font-size: 24px;
+    }
+    
+    .electrical,
+    .in-addition {
+        font-size: 14px;
+    }
+    
+    .read-more {
+        width: 140px;
+        height: 45px;
+    }
+    
+    .read-more p {
+        font-size: 14px;
+    }
+}
+
+/* Very small mobile (max-width: 320px) */
+@media (max-width: 320px) {
+    .commercial,
+    .residential,
+    .industrial {
+        height: 38px;
+        min-width: 90px;
+        max-width: 100px;
+        padding: 0 6px;
+    }
+    
+    .commercial img,
+    .residential img,
+    .industrial img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .text-commercial,
+    .text-residential,
+    .text-industrial {
+        font-size: 10px;
+    }
+}
+
+    /* Page 4 */
+    .page4 {
+        height: auto;
+        padding: 20px 15px;
+    }
+    .our-services {
+        padding: 20px 15px;
+        width: 100%;
+        text-align: center;
+    }
+    .area-of-service {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .text-area-of-service {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+    .text-our-services {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+    .we-offers-a-comprehensive {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .cards, .cards2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 0;
+        margin: 0 auto;
+        max-width: 95%;
+        justify-content: center;
+        align-items: center;
+    }
+    .Air-condition-service-card, .electrical-installation-card, .general-builder-card,
+    .security-system-card, .service-maintenance-card, .house-extensions-card {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
+        padding: 15px;
+        display: flex; /* Center content */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .icon-air-card, .icon-electrical-card, .icon-builder-card,
+    .icon-security-system-card, .icon-service-maintenance-card, .icon-house-extensions-card {
+        width: 2rem;
+        height: 2rem;
+        margin: 15px auto 0;
+        display: block;
+    }
+    .text-air-candition-service, .text-electrical-installation-card, .text-general-builder,
+    .text-security-system-card, .text-service-maintenance-card, .text-house-extensions-card {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        text-align: center;
+        margin: 10px auto; /* Centered */
+        width: 100%;
+    }
+    .services-are, .the-art, .we-provide-impeccable, .utillized, .electrical-services-are-able, .traditionally {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        text-align: center;
+        margin: 10px 15px;
+    }
+    .view-more1, .view-more2, .view-more3, .view-more4, .view-more5, .view-more6 {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        margin: 15px auto;
+        text-align: center;
+    }
+
+ /* Page 6 - Fixed mobile responsive with correct colors */
+.page6 {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    background: #1C2752;
+    padding: 80px 15px;
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.the-gallery-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 173px;
+    height: 27px;
+    background: #F4F4F4;
+    margin: 0 auto;
+}
+
+.the-gallery-icon {
+    padding-left: 21px;
+}
+
+.the-gallery {
+    width: 101px;
+    color: #1C2752;
+    font-family: Inter;
+    font-size: 18px;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.our-recent-projects {
+    width: 100%;
+    max-width: 449px;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 32px;
+    text-align: center;
+    line-height: 1.3;
+    margin: 0 auto;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto 0;
+    padding: 0;
+}
+
+/* Сохраняем оригинальные цвета фона карточек */
+.fiber-cable-change,
+.industry-machine-issue,
+.wheel-alloy-change,
+.roof-cleaning {
+    width: 100%;
+    height: auto;
+    background: #FFF !important; /* Белый фон как на планшете */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 0; /* Убираем скругления если были */
+    box-shadow: none; /* Убираем тени если были */
+}
+
+.fiber-cable-change-photo,
+.industry-machine-issue-photo,
+.wheel-alloy-change-photo,
+.roof-cleaning-photo {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    margin: 0 auto;
+    display: block;
+}
+
+.fiber-cable-change-text,
+.industry-machine-issue-text,
+.wheel-alloy-change-text,
+.roof-cleaning-text {
+    width: 100%;
+    color: #1C2752 !important; /* Темно-синий текст как на планшете */
+    font-family: Mulish;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 15px 0 5px;
+    text-align: center;
+}
+
+.fiber-cable-change-commercial,
+.industry-machine-issue-industry,
+.wheel-alloy-change-residantial,
+.roof-cleaning-commercial {
+    width: 100%;
+    color: #7E7E7E !important; /* Серый текст как на планшете */
+    font-family: Inter;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Tablet (768px - 1024px) - сохраняем текущую хорошую верстку */
+@media (min-width: 768px) {
+    .page6 {
+        padding: 100px 30px;
+    }
+    
+    .gallery-images {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+        gap: 25px;
+    }
+    
+    .our-recent-projects {
+        font-size: 38px;
+    }
+    
+    /* На планшете сохраняем оригинальные размеры карточек */
+    .fiber-cable-change,
+    .industry-machine-issue,
+    .wheel-alloy-change,
+    .roof-cleaning {
+        width: 100%;
+        height: auto;
+        padding: 21px 21px 26px; /* Оригинальные отступы */
+    }
+    
+    .fiber-cable-change-photo,
+    .industry-machine-issue-photo,
+    .wheel-alloy-change-photo,
+    .roof-cleaning-photo {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+/* Small tablets (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+    .gallery-images {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 560px;
+        gap: 20px;
+    }
+    
+    .fiber-cable-change,
+    .industry-machine-issue,
+    .wheel-alloy-change,
+    .roof-cleaning {
+        padding: 15px;
+    }
+}
+
+/* Desktop (1025px+) - оригинальная верстка */
+@media (min-width: 1025px) {
+    .page6 {
+        padding: 151px 120px 0;
+        height: 981px;
+    }
+    
+    .gallery {
+        width: 1200px;
+    }
+    
+    .gallery-images {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1200px;
+        gap: 30px;
+        margin: 49px 0 0 0;
+    }
+    
+    .our-recent-projects {
+        font-size: 45px;
+    }
+    
+    /* Восстанавливаем оригинальные размеры для десктопа */
+    .fiber-cable-change,
+    .wheel-alloy-change,
+    .roof-cleaning {
+        width: 320px;
+        height: 477px;
+    }
+    
+    .industry-machine-issue {
+        width: 320px;
+        height: 514px;
+    }
+    
+    .fiber-cable-change-photo {
+        padding: 21px 21px 0 21px;
+    }
+    
+    .industry-machine-issue-photo {
+        padding: 22px 0 0 21px;
+    }
+    
+    .wheel-alloy-change-photo {
+        margin: 22px 0 0 20px;
+    }
+    
+    .roof-cleaning-photo {
+        padding: 22px 21px 0 20px;
+    }
+}
+
+/* Mobile improvements (max-width: 599px) */
+@media (max-width: 599px) {
+    .page6 {
+        padding: 60px 15px;
+    }
+    
+    .gallery {
+        gap: 20px;
+    }
+    
+    .our-recent-projects {
+        font-size: 28px;
+        max-width: 300px;
+    }
+    
+    .gallery-images {
+        max-width: 320px;
+        gap: 15px;
+        margin: 30px auto 0;
+    }
+    
+    .fiber-cable-change,
+    .industry-machine-issue,
+    .wheel-alloy-change,
+    .roof-cleaning {
+        padding: 15px;
+        background: #FFF !important; /* Сохраняем белый фон */
+    }
+    
+    .fiber-cable-change-text,
+    .industry-machine-issue-text,
+    .wheel-alloy-change-text,
+    .roof-cleaning-text {
+        font-size: 18px;
+        margin: 10px 0 5px;
+        color: #1C2752 !important; /* Сохраняем цвет текста */
+    }
+    
+    .fiber-cable-change-commercial,
+    .industry-machine-issue-industry,
+    .wheel-alloy-change-residantial,
+    .roof-cleaning-commercial {
+        font-size: 14px;
+        color: #7E7E7E !important; /* Сохраняем цвет подтекста */
+    }
+}
+
+/* Small mobile (max-width: 375px) */
+@media (max-width: 375px) {
+    .page6 {
+        padding: 50px 10px;
+    }
+    
+    .gallery-images {
+        max-width: 280px;
+        gap: 12px;
+    }
+    
+    .fiber-cable-change,
+    .industry-machine-issue,
+    .wheel-alloy-change,
+    .roof-cleaning {
+        padding: 12px;
+        background: #FFF !important;
+    }
+    
+    .our-recent-projects {
+        font-size: 24px;
+    }
+    
+    .the-gallery-text {
+        width: 160px;
+    }
+    
+    .the-gallery {
+        font-size: 16px;
+    }
+}
+    /* Page 7 - Fixed responsive styles */
+.page7 {
+    width: 100%;
+    height: auto;
+    min-height: 1079px;
+    background: #FFF;
+    padding: 60px 15px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 auto;
+}
+
+.customer-says {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+}
+
+.testimonial-block {
+    display: flex;
+    align-items: center;
+    width: 174px;
+    height: 27px;
+    background: #F4F4F4;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.testimonial-icon {
+    padding-left: 21px;
+}
+
+.testimonial-text {
+    width: 102px;
+    color: #1C2752;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+}
+
+.customer-says-text {
+    width: 100%;
+    color: #1C2752;
+    font-family: Mulish;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.review-block {
+    width: 100%;
+    height: auto;
+    border: 1px solid #D2D2D2;
+    margin-top: 43px;
+    margin-bottom: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.info-nancy-block {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.info-nancy {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.nancy-luther {
+    width: auto;
+    color: #1C2752;
+    font-family: Mulish;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30.8px;
+    letter-spacing: 0.36px;
+}
+
+.new-york {
+    width: auto;
+    color: #7E7E7E;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+}
+
+.we-have-had {
+    width: 100%;
+    color: #7E7E7E;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.43px;
+    margin-top: 20px;
+}
+
+.we-have-had span {
+    color: #1C2752;
+}
+
+.button-block {
+    display: flex;
+    gap: 21px;
+    margin-top: 23px;
+    justify-content: center;
+}
+
+.rectangle-any-question {
+    width: 100%;
+    height: auto;
+    background: #FFB342;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.any-question-block {
+    display: flex;
+    align-items: center;
+    width: 191px;
+    height: 27px;
+    background: #F4F4F4;
+    margin: 0 auto;
+}
+
+.any-question-icon {
+    padding-left: 21px;
+}
+
+.any_question21 {
+    width: 119px;
+    color: #1C2752;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.43px;
+    text-transform: capitalize;
+    padding-left: 8px;
+}
+
+.score {
+    width: 100%;
+    color: #1C2752;
+    font-family: Mulish;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.5px;
+    letter-spacing: 0.36px;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.if-u-have-any {
+    width: 100%;
+    color: #1C2752;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.53px;
+    text-align: center;
+    margin-top: 13px;
+}
+
+.phone-info-nancy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    margin-top: 18px;
+}
+
+.number-nancy {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0.36px;
+}
+
+.appoitment-form {
+    width: 100%;
+    height: auto;
+}
+
+.meet-us-form {
+    width: 146px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F4F4F4;
+    margin: 0 auto;
+}
+
+.meet-us-icon {
+    padding-left: 20px;
+}
+
+.meet-us-text {
+    width: 74px;
+    color: #1C2752;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    padding-right: 20px;
+}
+
+.appoitment-form-text {
+    width: 100%;
+    color: #1C2752;
+    font-family: Mulish;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.rectangle-form {
+    width: 100%;
+    max-width: 564px;
+    background: #F4F4F4;
+    margin: 41px auto 0;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.rectangle-name,
+.rectangle-email,
+.rectangle-phone,
+.rectangle-date,
+.rectangle-service-description {
+    width: 100%;
+    height: 65px;
+    border: 0.5px solid #CCC;
+    background: #FFF;
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.rectangle-service-description {
+    height: 150px;
+    align-items: flex-start;
+}
+
+.name,
+.email,
+.phone-number,
+.date,
+.service-description {
+    color: #1C2752;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.button-form {
+    width: 100%;
+    height: 68px;
+    background: #FFB342;
+    margin: 35px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-form a {
+    display: block;
+    text-decoration: none;
+    color: #1C2752;
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.36px;
+}
+
+/* Media queries for page7 */
+@media (min-width: 769px) {
+    .form-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .customer-says {
+        width: 50%;
+    }
+    
+    .appoitment-form {
+        width: 50%;
+    }
+    
+    .rectangle-form {
+        margin: 41px 0 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .customer-says-text,
+    .appoitment-form-text {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    .number-nancy {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    .rectangle-form {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .customer-says-text,
+    .appoitment-form-text {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .score {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    
+    .number-nancy {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .rectangle-form {
+        padding: 20px 10px;
+    }
+    
+    .name,
+    .email,
+    .phone-number,
+    .date,
+    .service-description {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+}
+
+/* Page 8 - Fixed responsive styles */
+.page8 {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    background: #F4F4F4;
+    padding: 60px 15px;
+}
+
+.frame-one {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.text-and-price-plan-block {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.price-plan-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 159px;
+    height: 27px;
+    background: #FFF;
+    margin: 0 auto;
+}
+
+.icon-price-plan-block {
+    padding-left: 21px;
+}
+
+.text-price-plan-block {
+    width: 87px;
+    color: #1C2752;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    padding-right: 20px;
+}
+
+.lets-costomize {
+    width: 100%;
+    color: #1C2752;
+    font-family: Mulish;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+    margin-top: 23px;
+    text-align: center;
+}
+
+.text-frame-one {
+    width: 100%;
+    color: #7E7E7E;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.48px;
+    text-align: center;
+}
+
+.price-cards {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px auto 0;
+}
+
+.basic-plan,
+.standart-plan,
+.professional-plan {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    background: #FFF;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.inception-card-basic,
+.inception-card-standart,
+.inception-card-professional {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.inception-card-basic::after,
+.inception-card-standart::after,
+.inception-card-professional::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.basic-plan-text,
+.standart-plan-text,
+.professional-plan-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7px;
+    flex: 1;
+}
+
+.text-basic-plan,
+.text-standart,
+.text-professional-plan {
+    color: #1C2752;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.50px;
+}
+
+.cost-basic-plan,
+.cost-standart-plan,
+.cost-professional-plan {
+    color: #1C2752;
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.2px;
+    letter-spacing: 0.36px;
+}
+
+.per-visit-charge,
+.per-visit-charge-standart,
+.per-visit-charge-professional {
+    color: #7E7E7E;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    text-align: right;
+}
+
+.popular-and-per-visit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-left: 15px;
+}
+
+.popular {
+    width: 98px;
+    height: 24px;
+    background: #FFB342;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.popular p {
+    color: #1C2752;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    padding: 0 8px;
+}
+
+.per-visit-charge-standart {
+    color: #7E7E7E;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.32px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.basic-card-services,
+.standart-card-services,
+.professional-card-services {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.electrical-service,
+.distribution-service,
+.high-and-medium-service,
+.industrial-control-service,
+.switch-service,
+.generator-service,
+.innovative-service,
+.plc-service,
+.conveyor-service,
+.wiring-service,
+.electric-service,
+.service-service,
+.efficient-service,
+.site-service,
+.cable-service,
+.wiring-upgrades-service,
+.energy-service,
+.emergency-service,
+.pools-service,
+.air-service,
+.generating-service {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap: 12px;
+}
+
+.text-electrical-service,
+.text-distribution-service,
+.text-high-and-medium-service,
+.text-industrial-control-service,
+.text-switch-service,
+.text-generator-service,
+.text-innovative-service,
+.text-plc-service,
+.text-conveyor-service,
+.text-wiring-service,
+.text-electric-service,
+.text-service-service,
+.text-efficient-service,
+.text-site-service,
+.text-cable-service,
+.text-wiring-upgrades-service,
+.text-energy-service,
+.text-emergency-service,
+.text-pools-service,
+.text-air-service,
+.text-generating-service {
+    color: #7E7E7E;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.43px;
+    text-transform: capitalize;
+}
+
+.button-form-basic-card {
+    width: calc(100% - 40px);
+    max-width: 300px;
+    height: 60px;
+    background: #FFB342;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-form-basic-card:hover {
+    background: #ffa42a;
+}
+
+.button-form-basic-card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #1C2752;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    padding: 16px 30px;
+    width: 100%;
+}
+
+.affordable-price-and-fixed-plan-rectangle {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    flex-direction: column;
+    gap: 50px;
+    margin: 60px auto 0;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.affordable-price-block,
+.fixed-plan-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 550px;
+}
+
+.affordable-price-content,
+.fixed-plan-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.affordable-price-tick,
+.fixed-plan-tick {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.text-affordable-price,
+.text-fixed-plan {
+    width: 100%;
+    text-align: center;
+}
+
+.affordable-price-text,
+.fixed-plan-tick-text {
+    color: #1C2752;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.we-adhere,
+.we-understand {
+    color: #7E7E7E;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.49px;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+/* Media queries for page8 */
+@media (min-width: 992px) {
+    .price-cards {
+        flex-direction: row;
+        align-items: stretch;
+    }
+    
+    .basic-plan,
+    .standart-plan,
+    .professional-plan {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .affordable-price-and-fixed-plan-rectangle {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        gap: 60px;
+    }
+    
+    .affordable-price-block,
+    .fixed-plan-block {
+        width: 48%;
+        align-items: flex-start;
+    }
+    
+    .affordable-price-content,
+    .fixed-plan-content {
+        align-items: flex-start;
+    }
+    
+    .text-affordable-price,
+    .text-fixed-plan {
+        text-align: left;
+    }
+    
+    .affordable-price-text,
+    .fixed-plan-tick-text {
+        text-align: left;
+    }
+    
+    .we-adhere,
+    .we-understand {
+        text-align: left;
+    }
+    
+    .popular-and-per-visit {
+        margin-left: 20px;
+        align-items: flex-end;
+    }
+}
+
+@media (min-width: 769px) {
+    .frame-one {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+    }
+    
+    .text-and-price-plan-block {
+        width: 50%;
+        text-align: left;
+    }
+    
+    .text-frame-one {
+        width: 50%;
+        text-align: left;
+        padding-top: 50px;
+    }
+    
+    .price-plan-block,
+    .lets-costomize {
+        margin: 0;
+        text-align: left;
+    }
+    
+    .inception-card-basic,
+    .inception-card-standart,
+    .inception-card-professional {
+        padding: 25px 20px;
+    }
+    
+    .popular-and-per-visit {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lets-costomize {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    .text-frame-one {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .cost-basic-plan,
+    .cost-standart-plan,
+    .cost-professional-plan {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    
+    .text-basic-plan,
+    .text-standart,
+    .text-professional-plan {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .button-form-basic-card {
+        height: 55px;
+    }
+    
+    .button-form-basic-card a {
+        font-size: 16px;
+        padding: 14px 25px;
+    }
+    
+    .affordable-price-and-fixed-plan-rectangle {
+        padding: 30px 15px;
+        gap: 40px;
+    }
+    
+    .affordable-price-text,
+    .fixed-plan-tick-text {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    
+    .we-adhere,
+    .we-understand {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .inception-card-standart {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .standart-plan-text {
+        align-items: center;
+    }
+    
+    .popular-and-per-visit {
+        align-items: center;
+        margin-left: 0;
+    }
+    
+    .per-visit-charge-standart {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .lets-costomize {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .text-frame-one {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .inception-card-basic,
+    .inception-card-standart,
+    .inception-card-professional {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px 15px;
+    }
+    
+    .basic-plan-text,
+    .standart-plan-text,
+    .professional-plan-text {
+        align-items: center;
+    }
+    
+    .per-visit-charge,
+    .per-visit-charge-standart,
+    .per-visit-charge-professional,
+    .popular-and-per-visit {
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .cost-basic-plan,
+    .cost-standart-plan,
+    .cost-professional-plan {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+    .text-electrical-service,
+    .text-distribution-service,
+    .text-high-and-medium-service,
+    .text-industrial-control-service,
+    .text-switch-service,
+    .text-generator-service,
+    .text-innovative-service,
+    .text-plc-service,
+    .text-conveyor-service,
+    .text-wiring-service,
+    .text-electric-service,
+    .text-service-service,
+    .text-efficient-service,
+    .text-site-service,
+    .text-cable-service,
+    .text-wiring-upgrades-service,
+    .text-energy-service,
+    .text-emergency-service,
+    .text-pools-service,
+    .text-air-service,
+    .text-generating-service {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .button-form-basic-card {
+        height: 50px;
+        max-width: 280px;
+    }
+    
+    .button-form-basic-card a {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px 20px;
+    }
+    
+    .affordable-price-text,
+    .fixed-plan-tick-text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .we-adhere,
+    .we-understand {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .popular {
+        width: 90px;
+        height: 22px;
+    }
+    
+    .popular p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    
+    .per-visit-charge-standart {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 360px) {
+    .affordable-price-text,
+    .fixed-plan-tick-text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .we-adhere,
+    .we-understand {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .popular {
+        width: 85px;
+    }
+    
+    .popular p {
+        font-size: 11px;
+    }
+}
+    /* Page 9 */
+    .page9 {
+        height: auto;
+        padding: 20px 15px;
+    }
+    .page9-rectangle {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 15px;
+        align-items: center;
+    }
+    .subscribe-our-newsletter {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+    .stay-in-touch {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        width: 100%;
+        text-align: center;
+    }
+    .button-form-page9 {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+    .for-solid, .subscribe-button {
+        width: 100%;
+        max-width: 90%;
+        height: 3rem;
+        margin: 10px auto;
+    }
+    .enter-your-email-address, .text-subscribe {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer {
+        height: auto;
+        padding: 20px 15px;
+    }
+    .info-footer {
+        flex-direction: column;
+        padding: 15px 0;
+        align-items: center;
+    }
+    .main-info-footer {
+        padding-top: 0;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .logo-footer {
+        width: 6rem;
+        margin: 0 auto;
+    }
+    .mail-us-footer, .call-us-footer, .location-footer {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .mail-us-icon-footer, .call-us-icon-footer, .location-icon-footer {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .mail-us-text-footer, .call-us-text-footer, .location-text-footer {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+    .email-footer, .number-footer, .address-footer {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        text-align: center;
+    }
+    .frame-second-footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .we-are-here-to-fit {
+        padding: 15px 0;
+        text-align: center;
+    }
+    .text-we-are-here-to-fit {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        width: 100%;
+        text-align: center;
+    }
+    .social-media-footer {
+        padding: 15px 0;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .instagram-footer, .facebook-footer, .twitter-footer, .pinterest-footer {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .explore, .quick-links, .utility-pages {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+    .text-explore, .text-quick-links, .text-utility-pages {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .text-about-us-footer, .text-pricing, .text-team, .text-blog, .text-contact-us,
+    .text-home, .text-services-footer, .text-service-single, .text-projects, .text-projects-single,
+    .text-style-guide, .text-changelog-footer, .text-licenses, .text-protected-page, .text-four-of-four-page {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        text-align: center;
+    }
+}
+
+/* Phone (≤480px) */
+@media (max-width: 480px) {
+    section, footer, header {
+        padding: 15px 10px;
+    }
+
+    /* Header */
+    .header_nav a {
+        font-size: 0.9rem;
+        line-height: 1.25rem;
+    }
+    .any_questions {
+        max-width: 95%;
+        height: 2.5rem;
+    }
+    .text_nav p a {
+        font-size: 0.9rem;
+        line-height: 1.25rem;
+    }
+
+    /* Banner */
+    .time {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+    .media_icons {
+        gap: 10px;
+    }
+
+    /* Info Bar */
+    .info_bar {
+        padding: 35px 10px 10px; /* Increased top padding to lift */
+        height: auto;
+        z-index: 10;
+    }
+    .info_bar-content {
+        gap: 12px;
+    }
+    .contacts {
+        gap: 6px; /* Reduced gap */
+        padding: 8px 0;
+    }
+    .mail_info, .number_info {
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        margin-top: -8px; /* Lifted further */
+        max-width: 95%;
+    }
+    .mail-us, .call-us {
+        font-size: 0.9rem;
+        line-height: 1.25rem;
+    }
+    .info-bluecollar, .number {
+        font-size: 0.75rem;
+        line-height: 1rem;
+        text-align: center;
+    }
+    .container, .container2 {
+        width: 1.5rem; /* ~24px */
+        height: 1.5rem;
+    }
+
+    /* Page 1 */
+    .info_page1 {
+        padding: 15px 10px;
+    }
+    .improve_our {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+    .a_recognized {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .view_services {
+        max-width: 95%;
+        height: 2.5rem;
+    }
+    .view_services p {
+        font-size: 0.9rem;
+        line-height: 1.25rem;
+        padding-top: 0.6rem;
+    }
+
+    /* Page 2 */
+    .page2 {
+        padding: 15px 10px;
+        align-items: center;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+    .page2photo {
+        max-width: 95%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .block-welcome-bluecollar {
+        max-width: 95%;
+        margin: 10px auto;
+    }
+    .welcome-BlueCollar {
+        max-width: 95%;
+    }
+    .text-with-gear1, .blueCollar, .we-have, .for-all, .all-work, .experienced, .a-full, .properties {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+        max-width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .We-Provide-Your-Future {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .year {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .years-experience {
+        font-size: 0.9rem;
+        line-height: 1.25rem;
+    }
+    .experience, .years-of-experience, .comprehensive-services {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    /* Page 3 */
+    .page3 {
+        padding: 15px 10px;
+        margin-top: 0;
+        overflow: hidden;
+    }
+    .gear3 {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .text-what-we-offer, .we-have-extensive, .text-electrical-installation p, .electrical, .in-addition {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+        text-align: center;
+    }
+    .profession-main, .commercial-page3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .real-estate {
+        gap: 10px;
+        padding: 10px 0;
+    }
+    .commercial, .residential, .industrial {
+        max-width: 95%;
+        margin: 0 auto;
+        padding: 6px; /* Consistent padding */
+    }
+    .commercial img, .residential img, .industrial img {
+        max-width: 85%;
+    }
+    .text-commercial, .text-residential, .text-industrial {
+        font-size: 0.75rem;
+        line-height: 1rem;
+        padding: 6px 10px;
+        width: 100%;
+    }
+    .page3-rectangle {
+        padding: 8px;
+        max-width: 95%;
+        margin: 10px auto;
+    }
+    .electrical-installation {
+        margin: 5px 0;
+        max-width: 95%;
+    }
+    .text-electrical-installation p, .electrical, .in-addition {
+        max-width: 95%;
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+    .page3-image {
+        max-width: 95%;
+        margin: 5px auto;
+    }
+    .read-more {
+        max-width: 95%;
+        height: 2.5rem;
+    }
+    .read-more p {
+        font-size: 0.9rem;
+        line-height: 1.25rem;
+    }
+
+    /* Page 4 */
+    .text-area-of-service, .we-offers-a-comprehensive {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+    .text-our-services {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .cards, .cards2 {
+        max-width: 95%;
+    }
+    .Air-condition-service-card, .electrical-installation-card, .general-builder-card,
+    .security-system-card, .service-maintenance-card, .house-extensions-card {
+        max-width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .text-air-candition-service, .text-electrical-installation-card, .text-general-builder,
+    .text-security-system-card, .text-service-maintenance-card, .text-house-extensions-card {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 10px auto;
+        width: 100%;
+    }
+    .services-are, .the-art, .we-provide-impeccable, .utillized, .electrical-services-are-able, .traditionally {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+    .view-more1, .view-more2, .view-more3, .view-more4, .view-more5, .view-more6 {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+
+    /* Page 6 */
+    .page6 {
+        padding: 15px 10px;
+    }
+    .the-gallery {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+    .our-recent-projects {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .gallery-images {
+        gap: 15px;
+    }
+    .fiber-cable-change, .industry-machine-issue, .wheel-alloy-change, .roof-cleaning {
+        max-width: 95%;
+        padding: 6px;
+        overflow: hidden;
+        background: #0000ff;
+    }
+    .fiber-cable-change-photo, .industry-machine-issue-photo, .wheel-alloy-change-photo, .roof-cleaning-photo {
+        max-width: 100%;
+    }
+    .fiber-cable-change-text, .industry-machine-issue-text, .wheel-alloy-change-text, .roof-cleaning-text {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .fiber-cable-change-commercial, .industry-machine-issue-industry, .wheel-alloy-change-residential, .roof-cleaning-commercial {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+
+    /* Page 7 */
+    .customer-says, .appointment-form {
+        max-width: 95%;
+    }
+    .testimonial-text, .meet-us-text, .we-have-had, .any_question21, .if-u-have-any {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+    .customer-says-text, .appointment-form-text {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .nancy-luther, .score, .number-nancy {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .new-york {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+    .rectangle-name, .rectangle-email, .rectangle-phone, .rectangle-date, .rectangle-service-description {
+        max-width: 95%;
+    }
+    .name, .email, .phone-number, .date, .service-description {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+    .button-form {
+        max-width: 95%;
+        height: 2.5rem;
+    }
+    .button-form a {
+        font-size: 0.9rem;
+        line-height: 1.25rem;
+    }
+
+    /* Page 8 */
+    .text-and-price-plan-block, .basic-plan, .standart-plan, .professional-plan {
+        max-width: 95%;
+    }
+    .text-price-plan-block, .text-frame-one, .we-adhere, .we-understand {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+    .lets-costomize {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .text-basic-plan, .text-standart, .text-professional-plan {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .cost-basic-plan, .cost-standart-plan, .cost-professional-plan {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    .per-visit-charge, .per-visit-charge-standart, .per-visit-charge-professional {
+        font-size: 0.65rem;
+        line-height: 1rem;
+    }
+    .popular p {
+        font-size: 0.65rem;
+        line-height: 1rem;
+    }
+    .text-electrical-service, .text-distribution-service, .text-high-and-medium-service,
+    .text-industrial-control-service, .text-switch-service, .text-generator-service,
+    .text-innovative-service, .text-plc-service, .text-conveyor-service, .text-wiring-service,
+    .text-electric-service, .text-service-service, .text-efficient-service, .text-site-service,
+    .text-cable-service, .text-wiring-upgrades-service, .text-energy-service, .text-emergency-service,
+    .text-pools-service, .text-air-service, .text-generating-service {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+    .button-form-basic-card {
+        max-width: 95%;
+        height: 2.5rem;
+    }
+    .button-form-basic-card a {
+        font-size: 0.9rem;
+        line-height: 1.25rem;
+    }
+
+/* Адаптивность - меняем структуру только на маленьких экранах */
+@media (max-width: 1200px) {
+    .page9 {
+        height: auto; /* На планшетах и телефонах - авто высота */
+        min-height: 328px; /* Но не меньше оригинальной */
+        padding: 100px 60px;
+    }
+    
+    .page9-rectangle {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .subscribe {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .subscribe-our-newsletter {
+        width: 100%;
+        font-size: 28px;
+        line-height: 36px;
+        padding-top: 0;
+    }
+    
+    .stay-in-touch {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 0;
+    }
+    
+    .button-form-page9 {
+        width: 100%;
+        max-width: 500px;
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        margin: 0 auto;
+    }
+    
+    .for-solid {
+        width: 100%;
+        height: 60px;
+    }
+    
+    .subscribe-button {
+        width: 100%;
+        height: 60px;
+    }
+    
+    .enter-your-email-address {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .text-subscribe {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .page9 {
+        padding: 80px 20px;
+        min-height: 280px;
+    }
+    
+    .page9-rectangle {
+        gap: 30px;
+    }
+    
+    .subscribe-our-newsletter {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .stay-in-touch {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page9 {
+        padding: 60px 15px;
+        min-height: 250px;
+    }
+    
+    .for-solid,
+    .subscribe-button {
+        height: 55px;
+    }
+ }
+}
+
+/* FOOTER - Responsive Styles */
+
+/* Mobile First Approach */
+@media (max-width: 1200px) {
+    .footer {
+        height: auto;
+        padding: 40px 30px 30px;
+    }
+
+    .info-footer {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer .logo-footer {
+        padding-top: 0;
+        width: 120px;
+    }
+
+    .footer .main-info-footer {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer .mail-us-footer,
+    .footer .call-us-footer,
+    .footer .location-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        gap: 10px;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .footer .mail-us-icon-footer,
+    .footer .call-us-icon-footer,
+    .footer .location-icon-footer {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer .text-mail-info,
+    .footer .text-call-info,
+    .footer .text-location-info {
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .footer .mail-us-text-footer,
+    .footer .call-us-text-footer,
+    .footer .location-text-footer {
+        font-size: 18px;
+        line-height: 1.3;
+        width: auto;
+    }
+
+    .footer .email-footer,
+    .footer .number-footer,
+    .footer .address-footer {
+        font-size: 15px;
+        line-height: 1.4;
+        width: auto;
+    }
+
+    .footer .we-are-here-to-fit {
+        padding: 40px 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer .text-we-are-here-to-fit {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .footer .frame-second-footer {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .social-media-footer {
+        padding: 30px 0 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer .instagram-footer,
+    .footer .facebook-footer,
+    .footer .twitter-footer,
+    .footer .pinterest-footer {
+        width: 50px;
+        height: 50px;
+        padding-left: 0;
+    }
+
+    .footer .explore,
+    .footer .quick-links,
+    .footer .utility-pages {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer .text-explore,
+    .footer .text-quick-links,
+    .footer .text-utility-pages {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer .text-about-us-footer,
+    .footer .text-pricing,
+    .footer .text-team,
+    .footer .text-blog,
+    .footer .text-contact-us,
+    .footer .text-home,
+    .footer .text-services-footer,
+    .footer .text-service-single,
+    .footer .text-projects,
+    .footer .text-projects-single,
+    .footer .text-style-guide,
+    .footer .text-changelog-footer,
+    .footer .text-licenses,
+    .footer .text-protected-page,
+    .footer .text-four-of-four-page {
+        width: 100%;
+        text-align: center;
+        padding-top: 8px;
+        margin: 0;
+    }
+}
+
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .footer {
+        padding: 50px 40px 40px;
+    }
+
+    .footer .info-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer .main-info-footer {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+        width: auto;
+    }
+
+    .footer .mail-us-footer,
+    .footer .call-us-footer,
+    .footer .location-footer {
+        max-width: 180px;
+    }
+
+    .footer .frame-second-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer .we-are-here-to-fit {
+        width: 100%;
+        order: -1;
+        text-align: left;
+    }
+
+    .footer .text-we-are-here-to-fit {
+        text-align: left;
+        max-width: 400px;
+        margin: 0;
+    }
+
+    .footer .social-media-footer {
+        justify-content: flex-start;
+    }
+
+    .footer .explore,
+    .footer .quick-links,
+    .footer .utility-pages {
+        width: calc(33.333% - 20px);
+        text-align: left;
+    }
+
+    .footer .text-explore,
+    .footer .text-quick-links,
+    .footer .text-utility-pages {
+        text-align: left;
+    }
+
+    .footer .text-about-us-footer,
+    .footer .text-pricing,
+    .footer .text-team,
+    .footer .text-blog,
+    .footer .text-contact-us,
+    .footer .text-home,
+    .footer .text-services-footer,
+    .footer .text-service-single,
+    .footer .text-projects,
+    .footer .text-projects-single,
+    .footer .text-style-guide,
+    .footer .text-changelog-footer,
+    .footer .text-licenses,
+    .footer .text-protected-page,
+    .footer .text-four-of-four-page {
+        text-align: left;
+    }
+}
+
+/* Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+    .footer {
+        padding: 30px 20px 20px;
+    }
+
+    .footer .main-info-footer {
+        gap: 20px;
+    }
+
+    .footer .mail-us-footer,
+    .footer .call-us-footer,
+    .footer .location-footer {
+        max-width: 220px;
+    }
+
+    .footer .mail-us-icon-footer,
+    .footer .call-us-icon-footer,
+    .footer .location-icon-footer {
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer .mail-us-text-footer,
+    .footer .call-us-text-footer,
+    .footer .location-text-footer {
+        font-size: 16px;
+    }
+
+    .footer .email-footer,
+    .footer .number-footer,
+    .footer .address-footer {
+        font-size: 14px;
+    }
+
+    .footer .social-media-footer {
+        gap: 12px;
+    }
+
+    .footer .instagram-footer,
+    .footer .facebook-footer,
+    .footer .twitter-footer,
+    .footer .pinterest-footer {
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer .text-we-are-here-to-fit {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .footer .text-explore,
+    .footer .text-quick-links,
+    .footer .text-utility-pages {
+        font-size: 18px;
+    }
+
+    .footer .text-about-us-footer,
+    .footer .text-pricing,
+    .footer .text-team,
+    .footer .text-blog,
+    .footer .text-contact-us,
+    .footer .text-home,
+    .footer .text-services-footer,
+    .footer .text-service-single,
+    .footer .text-projects,
+    .footer .text-projects-single,
+    .footer .text-style-guide,
+    .footer .text-changelog-footer,
+    .footer .text-licenses,
+    .footer .text-protected-page,
+    .footer .text-four-of-four-page {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+/* Small mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 25px 15px 15px;
+    }
+
+    .footer .mail-us-icon-footer,
+    .footer .call-us-icon-footer,
+    .footer .location-icon-footer {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer .social-media-footer {
+        gap: 10px;
+    }
+
+    .footer .instagram-footer,
+    .footer .facebook-footer,
+    .footer .twitter-footer,
+    .footer .pinterest-footer {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer .explore,
+    .footer .quick-links,
+    .footer .utility-pages {
+        max-width: 100%;
+    }
+}
+
